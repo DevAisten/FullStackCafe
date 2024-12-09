@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li><a href="#cafes">Menu</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-header">
+            <a href="#" class="btn-1">Entrar</a>
+            <a href="#" class="btn-2">Cadastrar</a>
+        </div>
+    </header>
+
+    <main>
+        <article class="banner">
+            <h1 class="banner-nome">Full Stack Café</h1>
+            <h1>The fuel that keeps developers running</h1>
+            <img src="image/banner.png" alt="banner">
+        </article>
+
+        <section id="sobre-nos">
+            <h1 class="titulo">Sobre nós</h1>
+            <p class="texto1">No coração da comunidade tech, nasceu o Full Stack Coffee, um lugar onde criatividade e cafeína se encontram. Inspirados pelas longas noites de código e pelas conversas cheias de ideias entre amigos desenvolvedores, decidimos criar um espaço onde cada xícara de café fosse tão robusta quanto o código bem escrito.</p>
+
+            <p class="texto2">Aqui, acreditamos que o café é mais do que uma bebida – é o combustível que conecta mentes brilhantes, acelera projetos e transforma ideias em realidade. Seja para um brainstorming em equipe, uma pausa estratégica ou apenas para relaxar, o Full Stack Coffee é o ambiente perfeito para todos que vivem entre linhas de código e sonhos ousados.</p>
+                
+            <p class="texto3">Venha experimentar nosso café, preparado com a mesma paixão que os devs colocam em suas criações.</p>
+        </section>
+
+        <section id="cafes">
+            <h1 class="titulo">Nossos cafés</h1>
+            <div class="cafes-menu">
+                <div class="cafe-item">
+                    <img src="image/coffee1.jpg" alt="cafe-1">
+                    <h2>Americano</h2>
+                </div>
+                <div class="cafe-item">
+                    <img src="image/coffee2.jpg" alt="cafe-2">
+                    <h2>Brewed Coffees</h2>
+                </div>
+                <div class="cafe-item">
+                    <img src="image/coffee3.jpg" alt="cafe-3">
+                    <h2>Cappuccinos</h2>
+                </div>
+                <div class="cafe-item">
+                    <img src="image/coffee4.jpg" alt="cafe-4">
+                    <h2>Espresso Shots</h2>
+                </div>
+                <div class="cafe-item">
+                    <img src="image/coffee5.jpg" alt="cafe-5">
+                    <h2>Lattes</h2>
+                </div>
+                <div class="cafe-item">
+                    <img src="image/coffee6.jpg" alt="cafe-6">
+                    <h2>Mochas</h2>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contato">
+            <h1 class="titulo">Contato</h1>
+                <form action="#" method="post" id="form-contato">
+                    <input type="text" name="nome" id="" placeholder="Nome:">
+                    <input type="text" name="email" id="" placeholder="Email:">
+                    <textarea placeholder="Sua mensagem:"></textarea>
+                    <div class="btn-contato"><input type="submit" value="Enviar"></div>
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Full Stack Café. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('form-contato');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio normal do formulário
+            alert('Formulário enviado!'); // Exemplo de ação após o envio
+
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>
